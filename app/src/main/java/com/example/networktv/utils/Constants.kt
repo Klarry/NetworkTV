@@ -7,6 +7,8 @@ class Constants {
 
         const val ATTRIBUTE_HWID = "HWID"
 
+        const val DIALOG_STATE_KEY = "DIALOG_STATE_KEY"
+
         const val DEFAULT_PORT = 3345
         const val OHD_HTTP_PORT = 8181
     }

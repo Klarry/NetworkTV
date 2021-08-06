@@ -49,7 +49,6 @@ class NSDServiceImpl(private val context: Context?) : NSDService {
                 NsdManager.PROTOCOL_DNS_SD,
                 discoveryListener
             )
-            setState(NSDEvent.SERVICE_INIT)
         } catch (e: Exception) {
             Logger.error("$className, startListening exception: $e")
             e.printStackTrace()

@@ -10,10 +10,4 @@
     android:gravity="center"
     tools:context=".ui.main.view.MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/testButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call dialog"/>
-
 </LinearLayout>

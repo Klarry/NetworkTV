@@ -7,9 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="12dp"
+    android:background="@drawable/outline_blue_shape"
     android:clickable="true"
-    android:focusable="true"
-    android:addStatesFromChildren="true">
+    android:focusable="true">
 
     <ImageView
         android:id="@+id/tvIcon"
@@ -19,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/ic_tv_network"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/tvName"
@@ -28,9 +29,10 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@id/tvEditIcon"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/tvIcon"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvEditIcon"
         android:paddingBottom="4dp" />
 
     <TextView
@@ -39,7 +41,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@id/tvIcon"
         app:layout_constraintEnd_toStartOf="@id/tvEditIcon"
         app:layout_constraintTop_toBottomOf="@id/tvName" />
 
@@ -51,7 +54,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/ic_edit"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
